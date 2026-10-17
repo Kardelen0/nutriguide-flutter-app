@@ -167,7 +167,7 @@ nutriguide-design-architecture/
 ├── CODE_OF_CONDUCT.md             # Topluluk Davranış Kuralları
 ├── CONTRIBUTING.md                # Katkıda Bulunma Rehberi
 └── README.md                      # Kurumsal Ana Dokümantasyon
- Teknoloji Yığını (Tech Stack)KatmanTeknolojiSürümUI/UX DesignFigma (Auto Layout & Design Tokens)NativeDesign GuidelinesApple iOS Human Interface GuidelinesLatestDatabase EngineRelational SQL (MS SQL / PostgreSQL)Engine v15+Build & ToolingFigma Prototype & Vector EngineLatest Veritabanı Mimarisi & Veri SözlüğüProjenin arka planında çalışan ilişkisel veritabanı tabloları, veri türleri ve kısıtlama detayları aşağıda sunulmuştur.1. Customers TablosuUygulamaya kayıt olan kullanıcıların temel bilgilerinin ve benzersiz erişim verilerinin saklandığı tablodur.KolonVeri TipiAçıklamaCustomerIDINT (PK)Benzersiz Müşteri ID (Auto Increment)UsernameVARCHAR(50)Kullanıcı adı bilgisiEmailVARCHAR(100)Benzersiz e-posta adresi (UNIQUE KEY)CreatedAtDATETIMEKayıt oluşturulma tarihiSQL-- Müşteri Tablosu (Unique Key Kısıtlamalı)
+🛠️ Teknoloji Yığını (Tech Stack)KatmanTeknolojiSürümUI/UX DesignFigma (Auto Layout & Design Tokens)NativeDesign GuidelinesApple iOS Human Interface GuidelinesLatestDatabase EngineRelational SQL (MS SQL / PostgreSQL)Engine v15+Build & ToolingFigma Prototype & Vector EngineLatest🗄️ Veritabanı Mimarisi & Veri SözlüğüProjenin arka planında çalışan ilişkisel veritabanı tabloları, veri türleri ve kısıtlama detayları aşağıda sunulmuştur.1. Customers TablosuUygulamaya kayıt olan kullanıcıların temel bilgilerinin ve benzersiz erişim verilerinin saklandığı tablodur.KolonVeri TipiAçıklamaCustomerIDINT (PK)Benzersiz Müşteri ID (Auto Increment)UsernameVARCHAR(50)Kullanıcı adı bilgisiEmailVARCHAR(100)Benzersiz e-posta adresi (UNIQUE KEY)CreatedAtDATETIMEKayıt oluşturulma tarihiSQL-- Müşteri Tablosu (Unique Key Kısıtlamalı)
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY IDENTITY(1,1),
     Username VARCHAR(50) NOT NULL,
@@ -181,12 +181,5 @@ CREATE TABLE Orders (
     TotalPrice DECIMAL(10,2) NOT NULL,
     OrderDate DATETIME DEFAULT GETDATE()
 );
- Hata Yönetimi & Troubleshooting1. UNIQUE KEY Constraint Violation (SQL Hataları)Problem: Test ortamında mükerrer e-posta veya kullanıcı adı kaydı girildiğinde veritabanı UQ_Customer_Email hatası verir.Çözüm: Test verileri sıfırlanırken aşağıdaki komut çalıştırılmalıdır:SQLTRUNCATE TABLE Customers;
-
-
-İletişim & Geliştirici
-Selinay Kardelen Bölge
-Bilgisayar Mühendisliği Öğrencisi
-
-🔗 LinkedIn: Selinay Kardelen Bölge
-📧 E-mail: kardelenbolge@gmail.com
+🚨 Hata Yönetimi & Troubleshooting1. UNIQUE KEY Constraint Violation (SQL Hataları)Problem: Test ortamında mükerrer e-posta veya kullanıcı adı kaydı girildiğinde veritabanı UQ_Customer_Email hatası verir.Çözüm: Test verileri sıfırlanırken aşağıdaki komut çalıştırılmalıdır:SQLTRUNCATE TABLE Customers;
+👤 İletişim & GeliştiriciSelinay Kardelen BölgeBilgisayar Mühendisliği Öğrencisi🔗 LinkedIn: Selinay Kardelen Bölge📧 E-mail: kardelenbolge@gmail.com
