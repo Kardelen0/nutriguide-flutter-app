@@ -1,6 +1,6 @@
 <div align="center">
 
-#  NutriGuide - Premium Healthy Life & E-Commerce Platform
+# 🥗 NutriGuide - Premium Healthy Life & E-Commerce Platform
 
 > **Uçtan Uca Figma Tasarım Sistemi, Flutter/Dart Mimarisi ve SQL Veritabanı Entegrasyonu**
 
@@ -8,8 +8,17 @@
 ![Dart](https://img.shields.io/badge/Dart-v3.0-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-Design_System-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-Relational_DB-CC292B?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![Build](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)
+
+<br/>
+
+┌────────────────────────────────────────────────────────────────────────┐
+│                      🚨 SCREENSHOT / DEMO GIF HERE 🚨                 │
+│                                                                        │
+│  [ NutriGuide Dashboard & Responsive Mobile / Web Interfaces Preview ] │
+└────────────────────────────────────────────────────────────────────────┘
+
 
 </div>
 
@@ -17,34 +26,36 @@
 
 
 
->  **PROJE ÖZETİ**  
-> NutriGuide, kişiselleştirilmiş kalori/makro besin takibi ile sağlıklı yemek kâsesi (bowl) sipariş süreçlerini tek bir çatı altında toplayan uçtan uca mimariye sahip mobil ve web uygulama simülasyonudur.
+## 📌 Proje Amacı & Genel Bakış
+
+**NutriGuide**, kişiselleştirilmiş kalori/makro besin takibi ile sağlıklı yemek kâsesi (bowl) sipariş süreçlerini tek bir çatı altında toplayan uçtan uca mimariye sahip mobil ve web uygulama simülasyonudur.
+
+Bu proje; **UI/UX Figma Design System** aşamasından başlayıp, **Flutter/Dart Mimarisi**, **State Management**, **SQL Veritabanı Bütünlüğü** ve **Responsive Web Simülasyonu** katmanlarını kapsayan kurumsal standartlarda geliştirilmiş bir yazılım mühendisliği çalışmasıdır.
 
 ---
 
 
 
-##  İçindekiler
-- [ Proje Arayüz & Ekran Simülasyonları](#-proje-arayüz--ekran-simülasyonları)
-- [ Mimari Vurgular & Öne Çıkan Özellikler](#-mimari-vurgular--öne-çıkan-özellikler)
-- [ UI/UX Tasarım Sistemi & Design Tokens (Figma)](#-uiux-tasarım-sistemi--design-tokens-figma)
-- [ Sistem Mimarisi & Veri Akış Şeması](#️-sistem-mimarisi--veri-akış-şeması)
-- [ Teknoloji Yığını (Tech Stack)](#️-teknoloji-yığını-tech-stack)
-- [ Proje Klasör Dizini](#-proje-klasör-dizini)
-- [ Veritabanı Mimarisi & Constraint Kısıtlamaları](#️-veritabanı-mimarisi--constraint-kısıtlamaları)
-- [ Kurulum ve Çalıştırma Rehberi](#-kurulum-ve-çalıştırma-rehberi)
-- [ Hata Yönetimi & Troubleshooting](#-hata-yönetimi--troubleshooting)
-- [ Git Commit & Sürüm Kontrol Geçmişi](#-git-commit--sürüm-kontrol-geçmişi)
-- [ Geliştirici Kartı](#-geliştirici-kartı)
+## 🗺️ İçindekiler
+- [📱 Proje Arayüz & Ekran Simülasyonları](#-proje-arayüz--ekran-simülasyonları)
+- [🚀 Öne Çıkan Özellikler & Yetenekler](#-öne-çıkan-özellikler--yetenekler)
+- [🎨 UI/UX Tasarım Sistemi (Figma)](#-uiux-tasarım-sistemi-figma)
+- [🏗️ Sistem Mimarisi & Veri Akış Şeması](#️-sistem-mimarisi--veri-akış-şeması)
+- [🛠️ Teknoloji Yığını (Tech Stack)](#️-teknoloji-yığını-tech-stack)
+- [📂 Klasör Yapısı (Directory Tree)](#-klasör-yapısı-directory-tree)
+- [🗄️ Veritabanı Mimarisi & SQL Kısıtlamaları](#️-veritabanı-mimarisi--sql-kısıtlamaları)
+- [⚙️ Adım Adım Kurulum ve Kullanım Rehberi](#️-adım-adım-kurulum-ve-kullanım-rehberi)
+- [🚨 Hata Yönetimi & Troubleshooting](#-hata-yönetimi--troubleshooting)
+- [👤 İletişim](#-iletişim)
 
 ---
 
 
 
-##  Proje Arayüz & Ekran Simülasyonları
+## 📱 Proje Arayüz & Ekran Simülasyonları
 
 <blockquote>
-  <b> Arayüz Notu:</b> Tüm ekranlar iOS Human Interface Guidelines standartlarında 4 column simetrik grid ve Notch/Safe Area uyumu ile tasarlanmıştır.
+  <b>💡 Arayüz Notu:</b> Tüm ekranlar iOS Human Interface Guidelines standartlarında 4 column simetrik grid ve Notch/Safe Area uyumu ile tasarlanmıştır.
 </blockquote>
 
 | 1. Discover Dashboard | 2. Detail & Calorie Card | 3. Cart & Receptive UI | 4. Figma Design Tokens |
@@ -55,46 +66,44 @@
 
 
 
-##  Mimari Vurgular & Öne Çıkan Özellikler
+## 🚀 Öne Çıkan Özellikler & Yetenekler
 
-<blockquote>
-
-
-
-###  Core Capabilities
-* **Dinamik JSON Veri Modelleme:** `Product.fromJson` ve `Product.toJson` serileştirme mimarisi ile esnek ve tip güvenli (type-safe) veri yönetimi.
-* **Anlık Metin Filtreleme Algoritması:** Arama çubuğu üzerinden girilen metinleri anlık yakalayan, büyük/küçük harf duyarsız (`toLowerCase()`) yüksek performanslı liste filtreleme.
-* **Performanslı Grid Mimarisi:** `GridView.builder` kullanılarak bellek dostu, tembel yüklemeli (lazy loading) dinamik ürün katalog görünümü.
-* **Güvenli Rota ve Veri Aktarımı:** Ekranlar arası navigasyonda `Navigator.pushNamed` ve `Route Arguments` mimarisiyle parametre geçişi.
-* **Reaktif Sepet Yönetimi:** `StatefulWidget` ve `setState()` döngüleriyle anlık sepet güncelleme, miktar artırma/azaltma ve toplam fiyat hesaplama mekanizması.
-
-</blockquote>
+| Modül / Özellik | Teknik Yaklaşım / Mimari | Durum |
+| :--- | :--- | :---: |
+| **Dinamik JSON Serileştirme** | `Product.fromJson` ve `Product.toJson` ile tip güvenli veri aktarımı | ✅ |
+| **Anlık Metin Filtreleme** | Arama çubuğunda `toLowerCase()` ile büyük/küçük harf duyarsız arama | ✅ |
+| **Performanslı Grid Mimarisi** | `GridView.builder` ile bellek dostu tembel yüklemeli (lazy loading) katalog | ✅ |
+| **Tip Güvenli Rota Aktarımı** | Ekran geçişlerinde `Navigator.pushNamed` ve `Route Arguments` | ✅ |
+| **Reaktif Sepet Yönetimi** | `StatefulWidget` ve `setState()` döngüleriyle anlık tutar hesaplama | ✅ |
+| **Veri Bütünlüğü (Data Integrity)**| SQL veritabanı seviyesinde `UNIQUE KEY` kısıtlaması | ✅ |
 
 ---
 
 
 
-##  UI/UX Tasarım Sistemi & Design Tokens (Figma)
+## 🎨 UI/UX Tasarım Sistemi (Figma)
 
 <blockquote>
-  <b> Atomic Design Rules:</b> Tüm bileşenler Figma üzerinde Auto Layout (Shift + A) ve 8-pt Grid standartlarına tam bağlı kalınarak üretilmiştir.
+  <b>🎨 Atomic Design Rules:</b> Tüm bileşenler Figma üzerinde Auto Layout (Shift + A) ve 8-pt Grid standartlarına tam bağlı kalınarak üretilmiştir.
 </blockquote>
 
 
 
 ### Design Tokens & Color Palette
 
-| Token Adı | Renk Kodu | Rolü & Kullanım Alanı |
+| Token Adı | Hex Kodu | Kullanım Alanı |
 | :--- | :--- | :--- |
 | **Primary Emerald** | `#10B981` | Ana eylem butonları, navigasyon vurguları |
 | **Secondary Coral** | `#FF6B35` | Kalori sayaçları, uyarı ve indirim etiketleri |
 | **Dark Neutral** | `#2C2C2C` | Tipografi başlıkları, kontrast metinler |
 | **Warm Gourmet** | `#FFD1C0` | Arka plan gurme kart kaplamaları |
-| **Card Surface** | `#FFFFFF` | Ürün kart zeminleri ve pop-up modallar |
+| **Card Surface** | `#FFFFFF` | Ürün kart zeminleri ve modallar |
 
 ---
 
 
+
+## 🏗️ Sistem Mimarisi & Veri Akış Şeması
 
 <pre>
 ┌───────────────────────────────────────────────────────────────────┐
@@ -126,30 +135,36 @@
 │       (UNIQUE Key Constraints, Transactional Data Integrity)      │
 └───────────────────────────────────────────────────────────────────┘
 </pre>
----
-
-
-
-##  Teknoloji Yığını (Tech Stack)
-
-| Katman | Teknoloji | Sürüm | Açıklama |
-| :--- | :--- | :--- | :--- |
-| **UI/UX Design** | Figma | Native | Design System, Interactive Prototypes, Auto Layout |
-| **Frontend Framework**| Flutter | v3.22.2 | Cross-Platform Mobile & Web Runtime Engine |
-| **Language** | Dart | v3.0+ | Strongly Typed & Object-Oriented Language |
-| **State Management** | Reaktif `setState` | Native | Local state and cart management loops |
-| **Database** | SQL Engine | Relational | RDBMS, Entity Integrity, UNIQUE Constraints |
-| **Tooling & IDE** | VS Code / Git | Latest | Version Control, Chrome Web Debugger |
 
 ---
 
 
 
-##  Proje Klasör Dizini
+## 🛠️ Teknoloji Yığını (Tech Stack)
+
+| Katman | Teknoloji | Sürüm |
+| :--- | :--- | :--- |
+| **UI/UX Design** | Figma (Auto Layout & Design Tokens) | Native |
+| **Frontend Framework**| Flutter SDK | v3.22.2 |
+| **Programming Language** | Dart | v3.0+ |
+| **State Management** | Reaktif `setState` | Native |
+| **Database Engine** | Relational SQL (MS SQL / PostgreSQL) | Engine v15+ |
+| **Build & Tooling** | VS Code, Chrome Engine, Git | Latest |
+
+---
+
+
+
+## 📂 Klasör Yapısı (Directory Tree)
 
 ```bash
 nutriguide-flutter-app/
-├── lib/
+├── .github/                        # GitHub Konfigürasyonları ve Şablonlar
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md           # Hata Bildirimi Şablonu
+│   │   └── feature_request.md      # Yeni Özellik İsteyi Şablonu
+│   └── PULL_REQUEST_TEMPLATE.md    # PR Gönderim Şablonu
+├── lib/                            # Flutter Uygulama Kaynak Kodları
 │   ├── main.dart                   # Uygulama giriş noktası ve Rota (Routes) yönetimi
 │   ├── models/
 │   │   └── product_model.dart      # JSON Serileştirme & Veri Modeli
@@ -159,15 +174,18 @@ nutriguide-flutter-app/
 │       └── cart_screen.dart        # Sepet & Fiyat Hesaplama
 ├── web/
 │   └── index.html                  # Web Derleme ve Başlık Yapılandırması
-├── screenshots/                    # Uygulama ve Figma Ekran Görüntüleri
-├── pubspec.yaml                    # Bağımlılıklar ve Asset Yönetimi
-└── README.md                       # Kurumsal Dokümantasyon
+├── screenshots/                    # Uygulama Görselleri ve Figma Ekran Kayıtları
+├── .gitignore                      # Git Tarafından İzlenmeyecek Dosyalar
+├── CODE_OF_CONDUCT.md              # Topluluk Davranış Kuralları
+├── CONTRIBUTING.md                 # Katkıda Bulunma Rehberi
+├── pubspec.yaml                    # Bağımlılıklar ve Asset Yapılandırması
+└── README.md                       # Kurumsal Ana Dokümantasyon
 
 
 
-Veritabanı Mimarisi & Constraint Kısıtlamaları
+🗄️ Veritabanı Mimarisi & SQL Kısıtlamaları
 SQL
--- 1. Müşteri Tablosu (Unique Key Kısıtlamalı)
+-- Müşteri Tablosu (Unique Key Kısıtlamalı)
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY IDENTITY(1,1),
     Username VARCHAR(50) NOT NULL,
@@ -175,16 +193,7 @@ CREATE TABLE Customers (
     CreatedAt DATETIME DEFAULT GETDATE()
 );
 
--- 2. Ürün Katalog Tablosu
-CREATE TABLE Products (
-    ProductID INT PRIMARY KEY IDENTITY(1,1),
-    ProductName VARCHAR(100) NOT NULL,
-    Category VARCHAR(50) NOT NULL,
-    Price DECIMAL(10,2) NOT NULL,
-    Calories INT NOT NULL
-);
-
--- 3. Sipariş Detay Tablosu (Foreign Key Bağlantılı)
+-- Sipariş Detay Tablosu (Foreign Key Bağlantılı)
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY IDENTITY(1,1),
     CustomerID INT FOREIGN KEY REFERENCES Customers(CustomerID),
@@ -194,7 +203,7 @@ CREATE TABLE Orders (
 
 
 
- Kurulum ve Çalıştırma Rehberi
+⚙️ Adım Adım Kurulum ve Kullanım Rehberi
 1. Depoyu Klonlayın
 Bash
 git clone [https://github.com/kullanici-adi/nutriguide-flutter-app.git](https://github.com/kullanici-adi/nutriguide-flutter-app.git)
@@ -205,34 +214,29 @@ flutter pub get
 3. Uygulamayı Chrome (Web) Üzerinde Çalıştırın
 Bash
 flutter run -d chrome
- Hata Yönetimi & Troubleshooting
+
+
+
+🚨 Hata Yönetimi & Troubleshooting
 1. UNIQUE KEY Constraint Violation (SQL Hataları)
 Problem: Test ortamında mükerrer e-posta veya kullanıcı adı kaydı girildiğinde veritabanı hata verir.
 
-Çözüm: Test verileri sıfırlanırken aşağıdaki komut ile tablo temizlenmelidir:
+Çözüm: Test verileri sıfırlanırken aşağıdaki komut çalıştırılmalıdır:
 
 SQL
 TRUNCATE TABLE Customers;
-2. Flutter Web Asset/Görsel Yüklenememe Hatası
+2. Flutter Web Asset Yüklenme Hatası
 Problem: pubspec.yaml dosyasındaki görsel yollarının web derlemesinde okunamaması.
 
-Çözüm: Proje dizininde önbellek temizlenmeli ve paketler tekrar çekilmelidir:
+Çözüm: Önbellek temizlenip paketler yeniden çekilmelidir:
 
 Bash
 flutter clean
 flutter pub get
- Git Commit & Sürüm Kontrol Geçmişi
-Bash
-git commit -m "feat: initialize Flutter project structure and dependencies"
-git commit -m "style: setup Figma design tokens and Auto Layout guidelines"
-git commit -m "feat: implement Product.fromJson data serialization"
-git commit -m "feat: add dynamic search filter with case-insensitive logic"
-git commit -m "db: setup SQL Server schema and UNIQUE key constraints"
-git commit -m "docs: add comprehensive Turkish & English documentation"
 
 
- Geliştirici:
+👤Geliştirici İletişim
 Selinay Kardelen Bölge
-Bilgisayar Mühendisliği 
+Bilgisayar Mühendisliği Öğrencisi 
 LinkedIn: https://www.linkedin.com/in/selinay-kardelen-bölge-1204b6295 
-E-posta: kardelenbolge@gmail.com
+E-mail: kardelenbolge@gmail.com
