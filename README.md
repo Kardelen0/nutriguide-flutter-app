@@ -2,24 +2,6 @@
 
 #  NutriGuide - Premium Healthy Life UI/UX & Database Architecture
 
-> **Uçtan Uca Figma Tasarım Sistemi, UX Mimarisi ve SQL Veritabanı Entegrasyon Raporu**
-
-![Figma](https://img.shields.io/badge/Figma-Design_System-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-Relational_DB-CC292B?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![UI/UX](https://img.shields.io/badge/UI%2FUX-iOS_Guidelines-000000?style=for-the-badge&logo=apple&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
-<br/>
-
-┌────────────────────────────────────────────────────────────────────────┐
-│                                                                        │
-│                      🚨 SCREENSHOT / DEMO PREVIEW 🚨                   │
-│                                                                        │
-│   [ NutriGuide Dashboard & Responsive Mobile / Web Interfaces Preview ] │
-└────────────────────────────────────────────────────────────────────────┘
-
-</div>
-
 ---
 
 ##  Proje Amacı & Genel Bakış
