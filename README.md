@@ -235,7 +235,7 @@ flutter clean
 flutter pub get
 
 
-👤Geliştirici İletişim
+👤Geliştirici:
 Selinay Kardelen Bölge
 Bilgisayar Mühendisliği Öğrencisi 
 LinkedIn: https://www.linkedin.com/in/selinay-kardelen-bölge-1204b6295 
