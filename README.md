@@ -1,8 +1,10 @@
 <div align="center">
 
-#  NutriGuide - Premium Healthy Life UI/UX & Database Architecture
+#  NutriGuide 
+### Premium Healthy Life UI/UX & Database Architecture
+**Figma Design System · UI/UX Design · Relational Database Architecture**
+</div>
 
----
 
 ##  Proje Amacı & Genel Bakış
 
@@ -10,19 +12,30 @@
 
 Bu proje; **UI/UX Figma Design System** aşamasından başlayıp, **Tasarım Mimarisi**, **İlişkisel SQL Veritabanı Bütünlüğü** katmanlarını kapsayan kurumsal standartlarda geliştirilmiş bir tasarım ve mimari çalışmasıdır.
 
+Temel amaçlar:
+
+- Kullanıcı dostu ve tutarlı bir arayüz tasarlamak.
+- Figma üzerinde yeniden kullanılabilir tasarım bileşenleri oluşturmak.
+- Mobil uygulama ekranları arasında tutarlı bir kullanıcı akışı tasarlamak.
+- Web yönetim paneli arayüzünü görsel olarak modellemek.
+- Customers ve Orders tabloları üzerinden ilişkisel veritabanı yapısını incelemek.
+- Veritabanında benzersiz e-posta kısıtlaması ve müşteri-sipariş ilişkisini tanımlamak.
+
 ---
 
 ##  İçindekiler
 
-- [ Uygulama Ekranları ve Görsel Analizler](#️-uygulama-ekranları-ve-görsel-analizler)
-- [ Öne Çıkan Özellikler & Yetenekler](#-öne-çıkan-özellikler--yetenekler)
-- [ UI/UX Tasarım Sistemi (Figma)](#-uiux-tasarım-sistemi-figma)
-- [ Sistem Mimarisi & Veri Akış Şeması](#️-sistem-mimarisi--veri-akış-şeması)
-- [ Klasör Yapısı (Directory Tree)](#-klasör-yapısı-directory-tree)
-- [ Teknoloji Yığını (Tech Stack)](#️-teknoloji-yığını-tech-stack)
-- [ Veritabanı Mimarisi & Veri Sözlüğü](#️-veritabanı-mimarisi--veri-sözlüğü)
-- [ Hata Yönetimi & Troubleshooting](#-hata-yönetimi--troubleshooting)
-- [ İletişim](#-iletişim)
+| Özellik | Açıklama |
+| :--- | :--- |
+|  Tasarım Sistemi | Figma üzerinde renk paleti, tipografi ve bileşen tasarımı |
+|  Mobil Arayüz | Keşfet, giriş, açılış ve detay ekranlarının tasarımı |
+|  Web Arayüzü | Yönetim paneli arayüz simülasyonu |
+|  Auto Layout | Esnek ve düzenli arayüz bileşenleri |
+|  8-pt Grid | Arayüz elemanları arasında tutarlı boşluk kullanımı |
+|  Motion Design | Smart Animate ile prototip geçişleri |
+|  Veritabanı Tasarımı | Customers ve Orders tabloları |
+|  Veri Bütünlüğü | E-posta alanı için UNIQUE kısıtlaması |
+|  İlişkisel Yapı | Orders.CustomerID ile Customers.CustomerID arasındaki ilişki |
 
 ---
 
@@ -85,6 +98,7 @@ Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortam�
 
 ---
 
+
 ##  UI/UX Tasarım Sistemi (Figma)
 
 <blockquote>
@@ -108,7 +122,7 @@ Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortam�
 <pre>
 ┌───────────────────────────────────────────────────────────────────┐
 │                    Figma UI/UX Design System                      │
-│            (Auto Layout, 8-pt Grid, Component Variants)            │
+│            (Auto Layout, 8-pt Grid, Component Variants)           │
 └─────────────────────────────────┬─────────────────────────────────┘
                                   │
                                   ▼
@@ -129,6 +143,7 @@ Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortam�
 │        (UNIQUE Key Constraints, Transactional Data Integrity)     │
 └───────────────────────────────────────────────────────────────────┘
 </pre>
+
 
 ---
 
@@ -161,22 +176,26 @@ nutriguide-design-architecture/
 
 ---
 
-##  Teknoloji Yığını (Tech Stack)
+##  6. Kullanılan Teknolojiler
 
-| Katman | Teknoloji | Sürüm |
-| :--- | :--- | :--- |
-| **UI/UX Design** | Figma (Auto Layout & Design Tokens) | Native |
-| **Design Guidelines** | Apple iOS Human Interface Guidelines | Latest |
-| **Database Engine** | Relational SQL (MS SQL / PostgreSQL) | Engine v15+ |
-| **Build & Tooling** | Figma Prototype & Vector Engine | Latest |
+| Teknoloji / Araç | Kullanım Alanı |
+| :--- | :--- |
+| **Figma** | UI/UX tasarımı ve prototipleme |
+| **Auto Layout** | Esnek bileşen yerleşimi |
+| **8-pt Grid** | Tasarım boşluklarının standardizasyonu |
+| **Smart Animate** | Prototip geçişleri |
+| **SQL** | İlişkisel veritabanı şeması |
+| **Microsoft SQL Server uyumlu SQL** | Tablo tanımları ve veri kısıtlamaları |
+| **Visual Studio Code** | Ekran görüntüsünde gösterilen geliştirme ortamı |
+
 
 ---
 
-##  Veritabanı Mimarisi & Veri Sözlüğü
+## 7. Veritabanı Mimarisi & Veri Sözlüğü
 
 Projenin arka planında çalışan ilişkisel veritabanı tabloları, veri türleri ve kısıtlama detayları aşağıda sunulmuştur.
 
-### 1. Customers Tablosu
+###  Customers Tablosu
 
 Uygulamaya kayıt olan kullanıcıların temel bilgilerinin ve benzersiz erişim verilerinin saklandığı tablodur.
 
@@ -198,10 +217,16 @@ CREATE TABLE Customers (
     CreatedAt DATETIME DEFAULT GETDATE()
 );
 ```
+**Önemli noktalar:**
+
+- `PRIMARY KEY`, her müşteri kaydını benzersiz şekilde tanımlar.
+- `IDENTITY(1,1)`, kimlik değerinin otomatik artmasını sağlar.
+- `NOT NULL`, alanın boş bırakılmasını engeller.
+- `UNIQUE`, aynı e-posta değerinin birden fazla kayıtta kullanılmasını engeller.
 
 ---
 
-### 2. Orders Tablosu
+###  Orders Tablosu
 
 Kullanıcıların vermiş olduğu siparişlerin ve toplam tutarlarının saklandığı tablodur.
 
@@ -223,31 +248,174 @@ CREATE TABLE Orders (
     OrderDate DATETIME DEFAULT GETDATE()
 );
 ```
+**Önemli noktalar:**
+
+- `OrderID`, her siparişi benzersiz şekilde tanımlar.
+- `CustomerID`, siparişi müşteri kaydıyla ilişkilendirir.
+- `DECIMAL(10,2)`, parasal tutarların ondalıklı saklanmasına uygundur.
+- `FOREIGN KEY`, siparişin ilişkilendirildiği müşteri kaydının varlığını kontrol eder.
+
+---
+### 8. Tablolar Arasındaki İlişki
+
+```text
+┌─────────────────────┐
+│      Customers      │
+├─────────────────────┤
+│ PK CustomerID       │
+│    Username         │
+│    Email            │
+│    CreatedAt        │
+└──────────┬──────────┘
+           │
+           │ CustomerID
+           │
+           ▼
+┌─────────────────────┐
+│       Orders        │
+├─────────────────────┤
+│ PK OrderID          │
+│ FK CustomerID       │
+│    TotalPrice       │
+│    OrderDate        │
+└─────────────────────┘
+```
+
+Bu modelde bir müşteri birden fazla siparişle ilişkilendirilebilir. Her siparişin `CustomerID` değeri, ilgili müşteri kaydını gösterir.
+
+---
+##  9. Veritabanı Tasarımı ve Veri Bütünlüğü
+
+Bu projede dokümante edilen veritabanı çalışması Customers ve Orders tabloları ile sınırlıdır.
+
+### 9.1. Benzersiz E-posta Kısıtlaması
+
+`UQ_Customer_Email` kısıtlaması, aynı e-posta adresinin birden fazla müşteri kaydında kullanılmasını önler.
+
+```sql
+Email VARCHAR(100) NOT NULL
+    CONSTRAINT UQ_Customer_Email UNIQUE
+```
+
+### 9.2. Müşteri-Sipariş İlişkisi
+
+```sql
+CustomerID INT FOREIGN KEY
+    REFERENCES Customers(CustomerID)
+```
+
+Bu tanım, Orders tablosundaki müşteri referansının Customers tablosundaki bir kayda dayanmasını sağlar.
+
+### 9.3. Gerçek Veritabanı Çıktıları
+
+Gerçek SQL Server sorgu sonuçlarının ekran görüntüleri, depoya eklendiklerinde bu bölümde gösterilebilir.
+
+Örnek görsel yolu:
+
+```markdown
+![Customers Table](screenshots/customers-table.png)
+```
 
 ---
 
-##  Hata Yönetimi & Troubleshooting
+##  10. Hata Yönetimi ve Sık Karşılaşılan Problemler
 
-### 1. UNIQUE KEY Constraint Violation (SQL Hataları)
+### 10.1. UNIQUE Constraint Violation
 
-**Problem:** Test ortamında mükerrer e-posta veya kullanıcı adı kaydı girildiğinde veritabanı `UQ_Customer_Email` hatası verir.
+**Problem:** Aynı e-posta adresiyle tekrar müşteri kaydı eklenmeye çalışıldığında benzersizlik kısıtlaması ihlal edilir.
 
-**Çözüm:** Test verileri sıfırlanmadan önce aşağıdaki SQL komutunun etkisi kontrol edilmelidir.
+Örnek hata:
+
+```text
+Violation of UNIQUE KEY constraint
+```
+
+**Çözüm:**
+
+- Yeni kayıt eklemeden önce e-posta adresinin mevcut olup olmadığını kontrol et.
+- Test verilerinde farklı e-posta adresleri kullan.
+- Kısıtlamayı kaldırmak yerine veri bütünlüğünü koru.
+
+### 10.2. Foreign Key Constraint Hatası
+
+**Problem:** Orders tablosuna, Customers tablosunda bulunmayan bir `CustomerID` ile sipariş eklenmeye çalışılması.
+
+Örnek hata:
+
+```text
+The INSERT statement conflicted with the
+FOREIGN KEY constraint.
+```
+
+**Çözüm:**
+
+- Önce müşterinin Customers tablosunda bulunduğunu doğrula.
+- Sipariş kaydında geçerli bir `CustomerID` kullan.
+- İlişkili tablolardaki silme ve güncelleme işlemlerini dikkatli yürüt.
+
+### 10.3. Tablo Bulunamadı Hatası
+
+**Problem:** SQL sorgusunda belirtilen tablo, seçili veritabanında bulunmuyor olabilir.
+
+Örnek hata:
+
+```text
+Invalid object name 'Customers'.
+```
+
+**Çözüm:**
+
+- Doğru veritabanının seçildiğini kontrol et.
+- Tablo adının doğru yazıldığından emin ol.
+- Tablo oluşturma komutlarının çalıştırılıp çalıştırılmadığını doğrula.
+
+### 10.4. TRUNCATE TABLE Kullanımı
+
+`TRUNCATE TABLE`, tablo içindeki kayıtları topluca siler. Ancak Customers tablosu Orders tarafından bir foreign key ile referans edildiği için SQL Server'da doğrudan çalıştırılması engellenebilir.
 
 ```sql
 TRUNCATE TABLE Customers;
-
 ```
-
-> **Uyarı:** `TRUNCATE TABLE Customers;` komutu tablodaki tüm müşteri kayıtlarını siler. Gerçek veriler üzerinde çalıştırmadan önce yedek aldığından emin ol. Ayrıca `Orders` tablosu `Customers` tablosuna foreign key ile bağlı olduğundan SQL Server'da bu komut mevcut ilişki nedeniyle hata verebilir.
 
 ---
 
-## İletişim & Geliştirici
-Selinay Kardelen Bölge
+##  11. Proje Çıktıları
+
+Proje kapsamında dokümante edilen çıktılar:
+
+| Çıktı | Açıklama |
+| :--- | :--- |
+| Figma Tasarım Sistemi | Renk, tipografi ve bileşen tasarımı |
+| Mobil Ekran Tasarımları | Splash, Login, Home ve Detail akışı |
+| Web Yönetim Paneli Tasarımı | Yönetim panelinin görsel simülasyonu |
+| SQL Tablo Tanımları | Customers ve Orders tabloları |
+| İlişkisel Model | Primary Key ve Foreign Key ilişkileri |
+| Veri Bütünlüğü | E-posta için UNIQUE kısıtlaması |
+| Ekran Görüntüleri | Tasarım ve geliştirme ortamı görselleri |
+
+---
+
+##  12. Sonuç
+
+NutriGuide projesi, kullanıcı deneyimi tasarımı ile ilişkisel veritabanı modellemesini bir araya getiren bir çalışmadır.
+
+Figma tarafında tutarlı bir tasarım sistemi, mobil ekran akışları ve web arayüzü simülasyonu ele alınmıştır. Veritabanı tarafında ise Customers ve Orders tabloları üzerinden birincil anahtar, yabancı anahtar ve benzersiz e-posta kısıtlaması gibi temel kavramlar modellenmiştir.
+
+Bu çalışma; **UI/UX tasarımı, tasarım sistemi oluşturma, prototipleme ve ilişkisel veritabanı tasarımı** alanlarındaki çalışmaları belgelemektedir.
+
+---
+
+##  Geliştirici
+
+**Selinay Kardelen Bölge**
 
 Bilgisayar Mühendisliği
 
-LinkedIn: https:  //www.linkedin.com/in/selinay-kardelen-bölge-1204b6295 
+- **LinkedIn:** Selinay Kardelen Bölge
+- **E-posta:** kardelenbolge@gmail.com
 
-E-mail: kardelenbolge@gmail.com
+
+
+
+
+
