@@ -51,6 +51,7 @@ Uygulama açılışında kullanıcıyı karşılayan ana sayfa, kategori filtrel
 
 <img src="screenshots/Ekran görüntüsü 2026-06-13 171659.png" alt="Discover Ekranı" width="100%"/>
 
+
 ---
 
 ### 2. Çoklu Ekran Akışı (Splash, Login, Home, Detail)
