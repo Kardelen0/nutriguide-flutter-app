@@ -135,7 +135,7 @@ Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortam�
 
 ## 📂 Klasör Yapısı (Directory Tree)
 
-```text
+```bash
 nutriguide-design-architecture/
 ├── .github/                       # GitHub Konfigürasyonları ve Şablonlar
 │   ├── ISSUE_TEMPLATE/
