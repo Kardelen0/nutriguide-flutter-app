@@ -154,18 +154,30 @@ nutriguide-design-architecture/
 
 
 
-Teknoloji Yığını (Tech Stack)KatmanTeknolojiSürümUI/UX DesignFigma (Auto Layout & Design Tokens)NativeDesign GuidelinesApple iOS Human Interface GuidelinesLatestDatabase EngineRelational SQL (MS SQL / PostgreSQL)Engine v15+Build & ToolingFigma Prototype & Vector EngineLatest
+##  Teknoloji Yığını (Tech Stack)
+
+| Katman | Teknoloji | Sürüm |
+| :--- | :--- | :--- |
+| **UI/UX Design** | Figma (Auto Layout & Design Tokens) | Native |
+| **Design Guidelines** | Apple iOS Human Interface Guidelines | Latest |
+| **Database Engine** | Relational SQL (MS SQL / PostgreSQL) | Engine v15+ |
+| **Build & Tooling** | Figma Prototype & Vector Engine | Latest |
+
+---
 
 
 
- Veritabanı Mimarisi & SQL KısıtlamalarıSQL-- Müşteri Tablosu (Unique Key Kısıtlamalı)
+##  Veritabanı Mimarisi & SQL Kısıtlamaları
+
+```sql
+-- Müşteri Tablosu (Unique Key Kısıtlamalı)
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY IDENTITY(1,1),
     Username VARCHAR(50) NOT NULL,
     Email VARCHAR(100) NOT NULL CONSTRAINT UQ_Customer_Email UNIQUE,
     CreatedAt DATETIME DEFAULT GETDATE()
 );
-);
+
 
 
 -- Sipariş Detay Tablosu (Foreign Key Bağlantılı)
