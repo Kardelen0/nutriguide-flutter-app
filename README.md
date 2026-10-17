@@ -96,38 +96,36 @@
 
 
 
-##  Sistem Mimarisi & Veri Akış Şeması
-
-+-------------------------------------------------------------------+
-|                  Figma Design System & Tokens                     |
-|           (Auto Layout, 8-pt Grid, Component Variants)            |
-+----------------------------------+--------------------------------+
-|
-v
-+-------------------------------------------------------------------+
-|                  Flutter UI & Presentation Layer                  |
-|          (GridView.builder, Custom Search, Screen Routes)         |
-+----------------------------------+--------------------------------+
-|
-v
-+-------------------------------------------------------------------+
-|                 State Management & Reactive Engine                |
-|           (setState Loops, Cart Calculations, Navigation)         |
-+----------------------------------+--------------------------------+
-|
-v
-+-------------------------------------------------------------------+
-|                   Data & Serialization Layer                      |
-|         (Product.fromJson, Product.toJson, JSON Mapping)          |
-+----------------------------------+--------------------------------+
-|
-v
-+-------------------------------------------------------------------+
-|               Relational Database (SQL Core Engine)               |
-|      (UNIQUE Key Constraints, Transactional Data Integrity)       |
-+-------------------------------------------------------------------+
-
-
+<pre>
+┌───────────────────────────────────────────────────────────────────┐
+│                   Figma UI/UX Design System                       │
+│            (Auto Layout, 8-pt Grid, Component Variants)           │
+└─────────────────────────────────┬─────────────────────────────────┘
+                                  │
+                                  ▼
+┌───────────────────────────────────────────────────────────────────┐
+│                   Flutter UI & Presentation Layer                 │
+│           (GridView.builder, Custom Search, Screen Routes)        │
+└─────────────────────────────────┬─────────────────────────────────┘
+                                  │
+                                  ▼
+┌───────────────────────────────────────────────────────────────────┐
+│                  State Management & Reactive Engine               │
+│            (setState Loops, Cart Calculations, Navigation)        │
+└─────────────────────────────────┬─────────────────────────────────┘
+                                  │
+                                  ▼
+┌───────────────────────────────────────────────────────────────────┐
+│                    Data & Serialization Layer                     │
+│          (Product.fromJson, Product.toJson, JSON Mapping)         │
+└─────────────────────────────────┬─────────────────────────────────┘
+                                  │
+                                  ▼
+┌───────────────────────────────────────────────────────────────────┐
+│                Relational Database (SQL Core Engine)              │
+│       (UNIQUE Key Constraints, Transactional Data Integrity)      │
+└───────────────────────────────────────────────────────────────────┘
+</pre>
 ---
 
 
