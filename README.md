@@ -134,7 +134,7 @@ Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortam�
 
 ##  Klasör Yapısı (Directory Tree)
 
-```text
+```bash
 nutriguide-design-architecture/
 ├── .github/                       # GitHub Konfigürasyonları ve Şablonlar
 │   ├── ISSUE_TEMPLATE/
@@ -234,6 +234,7 @@ CREATE TABLE Orders (
 
 ```sql
 TRUNCATE TABLE Customers;
+
 ```
 
 > **Uyarı:** `TRUNCATE TABLE Customers;` komutu tablodaki tüm müşteri kayıtlarını siler. Gerçek veriler üzerinde çalıştırmadan önce yedek aldığından emin ol. Ayrıca `Orders` tablosu `Customers` tablosuna foreign key ile bağlı olduğundan SQL Server'da bu komut mevcut ilişki nedeniyle hata verebilir.
@@ -241,9 +242,10 @@ TRUNCATE TABLE Customers;
 ---
 
 ## İletişim & Geliştirici
-
 Selinay Kardelen Bölge
+
 Bilgisayar Mühendisliği
 
-LinkedIn: https://www.linkedin.com/in/selinay-kardelen-bölge-1204b6295 
+LinkedIn: https:  //www.linkedin.com/in/selinay-kardelen-bölge-1204b6295 
+
 E-mail: kardelenbolge@gmail.com
