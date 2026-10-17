@@ -156,7 +156,7 @@ nutriguide-design-architecture/
 ├── CODE_OF_CONDUCT.md             # Topluluk Davranış Kuralları
 ├── CONTRIBUTING.md                # Katkıda Bulunma Rehberi
 └── README.md                      # Kurumsal Ana Dokümantasyon
----
+```
 
 
 ---
