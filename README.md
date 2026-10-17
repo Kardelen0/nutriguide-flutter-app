@@ -1,6 +1,6 @@
-Markdown<div align="center">
+<div align="center">
 
-# 🥗 NutriGuide - Premium Healthy Life UI/UX & Database Architecture
+#  NutriGuide - Premium Healthy Life UI/UX & Database Architecture
 
 > **Uçtan Uca Figma Tasarım Sistemi, UX Mimarisi ve SQL Veritabanı Entegrasyon Raporu**
 
@@ -22,9 +22,7 @@ Markdown<div align="center">
 
 ---
 
-
-
-## 📌 Proje Amacı & Genel Bakış
+##  Proje Amacı & Genel Bakış
 
 **NutriGuide**, kişiselleştirilmiş kalori/makro besin takibi ile sağlıklı yemek kâseleri (bowl) sipariş süreçlerini tek bir çatı altında toplayan premium bir mobil ve web uygulama simülasyonudur.
 
@@ -32,50 +30,44 @@ Bu proje; **UI/UX Figma Design System** aşamasından başlayıp, **Tasarım Mim
 
 ---
 
+##  İçindekiler
 
-
-## 🗺️ İçindekiler
-- [🖼️ Uygulama Ekranları ve Görsel Analizler](#️-uygulama-ekranları-ve-görsel-analizler)
-- [🚀 Öne Çıkan Özellikler & Yetenekler](#-öne-çıkan-özellikler--yetenekler)
-- [🎨 UI/UX Tasarım Sistemi (Figma)](#-uiux-tasarım-sistemi-figma)
-- [🏗️ Sistem Mimarisi & Veri Akış Şeması](#️-sistem-mimarisi--veri-akış-şeması)
-- [📂 Klasör Yapısı (Directory Tree)](#-klasör-yapısı-directory-tree)
-- [🛠️ Teknoloji Yığını (Tech Stack)](#️-teknoloji-yığını-tech-stack)
-- [🗄️ Veritabanı Mimarisi & Veri Sözlüğü](#️-veritabanı-mimarisi--veri-sözlüğü)
-- [🚨 Hata Yönetimi & Troubleshooting](#-hata-yönetimi--troubleshooting)
-- [👤 İletişim](#-iletişim)
+- [ Uygulama Ekranları ve Görsel Analizler](#️-uygulama-ekranları-ve-görsel-analizler)
+- [ Öne Çıkan Özellikler & Yetenekler](#-öne-çıkan-özellikler--yetenekler)
+- [ UI/UX Tasarım Sistemi (Figma)](#-uiux-tasarım-sistemi-figma)
+- [ Sistem Mimarisi & Veri Akış Şeması](#️-sistem-mimarisi--veri-akış-şeması)
+- [ Klasör Yapısı (Directory Tree)](#-klasör-yapısı-directory-tree)
+- [ Teknoloji Yığını (Tech Stack)](#️-teknoloji-yığını-tech-stack)
+- [ Veritabanı Mimarisi & Veri Sözlüğü](#️-veritabanı-mimarisi--veri-sözlüğü)
+- [ Hata Yönetimi & Troubleshooting](#-hata-yönetimi--troubleshooting)
+- [ İletişim](#-iletişim)
 
 ---
 
-
-
-## 🖼️ Uygulama Ekranları ve Görsel Analizler
+##  Uygulama Ekranları ve Görsel Analizler
 
 <blockquote>
-  <b>💡 Arayüz Notu:</b> Tüm ekranlar iOS Human Interface Guidelines standartlarında 4 column simetrik grid ve Notch/Safe Area uyumu ile tasarlanmıştır.
+  <b> Arayüz Notu:</b> Tüm ekranlar iOS Human Interface Guidelines standartlarında 4 column simetrik grid ve Notch/Safe Area uyumu ile tasarlanmıştır.
 </blockquote>
 
-
-
 ### 1. Keşfet (Discover) ve Ana Sayfa Akışı
+
 Uygulama açılışında kullanıcıyı karşılayan ana sayfa, kategori filtreleri ve ürün ızgara (grid) yapısı.
 
 <img src="screenshots/Ekran%20görüntüsü%202026-06-13%20171659.jpg" alt="Discover Ekranı" width="100%"/>
 
 ---
 
-
-
 ### 2. Çoklu Ekran Akışı (Splash, Login, Home, Detail)
+
 Projenin uçtan uca tüm ekran akışlarının (Açılış, Giriş, Keşif ve Detay) bütüncül görünümü.
 
 <img src="screenshots/Ekran%20görüntüsü%202026-06-13%20220533.jpg" alt="Multi Screen Flow" width="100%"/>
 
 ---
 
-
-
 ### 3. Figma Design System & Tokens
+
 Tasarım sisteminde kullanılan renk paletleri, tipografi hiyerarşisi, ikonlar ve component varyantlarının toplu halde gösterildiği tahta.
 
 <img src="screenshots/Ekran%20görüntüsü%202026-06-13%20220601.jpg" alt="Design System" width="100%"/>
@@ -83,24 +75,22 @@ Tasarım sisteminde kullanılan renk paletleri, tipografi hiyerarşisi, ikonlar 
 ---
 
 ### 4. Web Yönetim Paneli Simülasyonu (Arayüz)
+
 Yönetim paneli üzerinden yeni sağlıklı tariflerin eklendiği ve listelendiği web arayüzü görünümü.
 
 <img src="screenshots/Ekran%20görüntüsü%202026-06-21%20032814.png" alt="Web Dashboard" width="100%"/>
 
 ---
 
-
-
 ### 5. VS Code & Canlı Geliştirme Ortamı
+
 Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortamının (Vite/React/Web) incelendiği IDE ekranı.
 
 <img src="screenshots/Ekran%20görüntüsü%202026-06-21%20033417.png" alt="IDE Environment" width="100%"/>
 
 ---
 
-
-
-## 🚀 Öne Çıkan Özellikler & Yetenekler
+##  Öne Çıkan Özellikler & Yetenekler
 
 | Modül / Özellik | Teknik Yaklaşım / Mimari | Durum |
 | :--- | :--- | :---: |
@@ -109,16 +99,14 @@ Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortam�
 | **Akıcı Motion Design** | Sayfa geçişlerinde *Smart Animate (Gentle, Linear, Ease Out)* | ✅ |
 | **Hiyerarşik Tipografi** | Roboto yazı tipi ailesiyle H1-H3 ve Body hiyerarşisi | ✅ |
 | **Reaktif Arayüz Bileşenleri** | Varyantlı butonlar ve esnek katman yönetimi | ✅ |
-| **Veri Bütünlüğü (Data Integrity)**| SQL veritabanı seviyesinde `UNIQUE KEY` kısıtlaması | ✅ |
+| **Veri Bütünlüğü (Data Integrity)** | SQL veritabanı seviyesinde `UNIQUE KEY` kısıtlaması | ✅ |
 
 ---
 
-
-
-## 🎨 UI/UX Tasarım Sistemi (Figma)
+##  UI/UX Tasarım Sistemi (Figma)
 
 <blockquote>
-  <b>🎨 Atomic Design Rules:</b> Tüm bileşenler Figma üzerinde Auto Layout (Shift + A) ve 8-pt Grid standartlarına tam bağlı kalınarak üretilmiştir.
+  <b> Atomic Design Rules:</b> Tüm bileşenler Figma üzerinde Auto Layout (Shift + A) ve 8-pt Grid standartlarına tam bağlı kalınarak üretilmiştir.
 </blockquote>
 
 ### Design Tokens & Color Palette
@@ -133,12 +121,12 @@ Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortam�
 
 ---
 
-## 🏗️ Sistem Mimarisi & Veri Akış Şeması
+##  Sistem Mimarisi & Veri Akış Şeması
 
 <pre>
 ┌───────────────────────────────────────────────────────────────────┐
 │                    Figma UI/UX Design System                      │
-│            (Auto Layout, 8-pt Grid, Component Variants)           │
+│            (Auto Layout, 8-pt Grid, Component Variants)            │
 └─────────────────────────────────┬─────────────────────────────────┘
                                   │
                                   ▼
@@ -162,9 +150,9 @@ Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortam�
 
 ---
 
-## 📂 Klasör Yapısı (Directory Tree)
+##  Klasör Yapısı (Directory Tree)
 
-```bash
+```text
 nutriguide-design-architecture/
 ├── .github/                       # GitHub Konfigürasyonları ve Şablonlar
 │   ├── ISSUE_TEMPLATE/
@@ -185,12 +173,11 @@ nutriguide-design-architecture/
 ├── CODE_OF_CONDUCT.md             # Topluluk Davranış Kuralları
 ├── CONTRIBUTING.md                # Katkıda Bulunma Rehberi
 └── README.md                      # Kurumsal Ana Dokümantasyon
-
-
+```
 
 ---
 
-## 🛠️ Teknoloji Yığını (Tech Stack)
+##  Teknoloji Yığını (Tech Stack)
 
 | Katman | Teknoloji | Sürüm |
 | :--- | :--- | :--- |
@@ -200,20 +187,24 @@ nutriguide-design-architecture/
 | **Build & Tooling** | Figma Prototype & Vector Engine | Latest |
 
 ---
-## 🗄️ Veritabanı Mimarisi & Veri Sözlüğü
+
+##  Veritabanı Mimarisi & Veri Sözlüğü
+
 Projenin arka planında çalışan ilişkisel veritabanı tabloları, veri türleri ve kısıtlama detayları aşağıda sunulmuştur.
 
 ### 1. Customers Tablosu
+
 Uygulamaya kayıt olan kullanıcıların temel bilgilerinin ve benzersiz erişim verilerinin saklandığı tablodur.
 
 | Kolon | Veri Tipi | Açıklama |
 | :--- | :--- | :--- |
-| **CustomerID** | INT (PK) | Benzersiz Müşteri ID (Auto Increment) |
-| **Username** | VARCHAR(50) | Kullanıcı adı bilgisi |
-| **Email** | VARCHAR(100) | Benzersiz e-posta adresi (UNIQUE KEY) |
-| **CreatedAt** | DATETIME | Kayıt oluşturulma tarihi |
+| **CustomerID** | `INT (PK)` | Benzersiz Müşteri ID (Auto Increment) |
+| **Username** | `VARCHAR(50)` | Kullanıcı adı bilgisi |
+| **Email** | `VARCHAR(100)` | Benzersiz e-posta adresi (UNIQUE KEY) |
+| **CreatedAt** | `DATETIME` | Kayıt oluşturulma tarihi |
 
 #### SQL Kodu
+
 ```sql
 -- Müşteri Tablosu (Unique Key Kısıtlamalı)
 CREATE TABLE Customers (
@@ -224,17 +215,21 @@ CREATE TABLE Customers (
 );
 ```
 
+---
+
 ### 2. Orders Tablosu
+
 Kullanıcıların vermiş olduğu siparişlerin ve toplam tutarlarının saklandığı tablodur.
 
 | Kolon | Veri Tipi | Açıklama |
 | :--- | :--- | :--- |
-| **OrderID** | INT (PK) | Benzersiz Sipariş ID (Auto Increment) |
-| **CustomerID** | INT (FK) | Siparişi veren müşterinin ID'si (Customers ile ilişkili) |
-| **TotalPrice** | DECIMAL(10,2) | Sipariş toplam tutarı |
-| **OrderDate** | DATETIME | Siparişin verildiği tarih/saat |
+| **OrderID** | `INT (PK)` | Benzersiz Sipariş ID (Auto Increment) |
+| **CustomerID** | `INT (FK)` | Siparişi veren müşterinin ID'si (Customers ile ilişkili) |
+| **TotalPrice** | `DECIMAL(10,2)` | Sipariş toplam tutarı |
+| **OrderDate** | `DATETIME` | Siparişin verildiği tarih/saat |
 
 #### SQL Kodu
+
 ```sql
 -- Sipariş Detay Tablosu (Foreign Key Bağlantılı)
 CREATE TABLE Orders (
@@ -245,14 +240,28 @@ CREATE TABLE Orders (
 );
 ```
 
+---
 
+##  Hata Yönetimi & Troubleshooting
 
-🚨 Hata Yönetimi & Troubleshooting1. UNIQUE KEY Constraint Violation (SQL Hataları)Problem: Test ortamında mükerrer e-posta veya kullanıcı adı kaydı girildiğinde veritabanı UQ_Customer_Email hatası verir.Çözüm: Test verileri sıfırlanırken aşağıdaki komut çalıştırılmalıdır:SQLTRUNCATE TABLE Customers;
+### 1. UNIQUE KEY Constraint Violation (SQL Hataları)
 
+**Problem:** Test ortamında mükerrer e-posta veya kullanıcı adı kaydı girildiğinde veritabanı `UQ_Customer_Email` hatası verir.
 
+**Çözüm:** Test verileri sıfırlanmadan önce aşağıdaki SQL komutunun etkisi kontrol edilmelidir.
 
-👤 İletişim & Geliştirici
+```sql
+TRUNCATE TABLE Customers;
+```
+
+> **Uyarı:** `TRUNCATE TABLE Customers;` komutu tablodaki tüm müşteri kayıtlarını siler. Gerçek veriler üzerinde çalıştırmadan önce yedek aldığından emin ol. Ayrıca `Orders` tablosu `Customers` tablosuna foreign key ile bağlı olduğundan SQL Server'da bu komut mevcut ilişki nedeniyle hata verebilir.
+
+---
+
+## İletişim & Geliştirici
+
 Selinay Kardelen Bölge
 Bilgisayar Mühendisliği
-LinkedIn: Selinay Kardelen Bölge
+
+LinkedIn: https://www.linkedin.com/in/selinay-kardelen-bölge-1204b6295 
 E-mail: kardelenbolge@gmail.com
