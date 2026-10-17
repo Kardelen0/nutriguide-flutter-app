@@ -1,0 +1,28 @@
+# Flutter / Dart Bağımlılıkları ve Derleme Çıktıları
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+
+# Web Derleme Çıktıları
+lib/generated_plugin_registrant.dart
+
+# Ortam Değişkenleri ve Gizli Dosyalar
+.env
+*.local
+
+# IDE ve Editör Yapılandırmaları
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# İşletim Sistemi Dosyaları
+.DS_Store
+Thumbs.db
+
+# Log Dosyaları
+*.log
