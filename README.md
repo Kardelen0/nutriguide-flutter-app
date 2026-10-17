@@ -189,7 +189,8 @@ nutriguide-design-architecture/
 
 
 ---
-### 🛠️ Teknoloji Yığını (Tech Stack)
+
+## 🛠️ Teknoloji Yığını (Tech Stack)
 
 | Katman | Teknoloji | Sürüm |
 | :--- | :--- | :--- |
@@ -197,8 +198,6 @@ nutriguide-design-architecture/
 | **Design Guidelines** | Apple iOS Human Interface Guidelines | Latest |
 | **Database Engine** | Relational SQL (MS SQL / PostgreSQL) | Engine v15+ |
 | **Build & Tooling** | Figma Prototype & Vector Engine | Latest |
-
-
 
 ---
 ## 🗄️ Veritabanı Mimarisi & Veri Sözlüğü
@@ -224,10 +223,6 @@ CREATE TABLE Customers (
     CreatedAt DATETIME DEFAULT GETDATE()
 );
 ```
-
-
-
----
 
 ### 2. Orders Tablosu
 Kullanıcıların vermiş olduğu siparişlerin ve toplam tutarlarının saklandığı tablodur.
