@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🥗 NutriGuide - Premium Healthy Life UI/UX & Database Architecture
+#  NutriGuide - Premium Healthy Life UI/UX & Database Architecture
 
 > **Uçtan Uca Figma Tasarım Sistemi, UX Mimarisi ve SQL Veritabanı Entegrasyon Raporu**
 
@@ -35,13 +35,13 @@ Bu proje; **UI/UX Figma Design System** aşamasından başlayıp, **Tasarım Mim
 
 
 ##  İçindekiler
-- [ Proje Arayüz & Ekran Simülasyonları](#-proje-arayüz--ekran-simülasyonları)
+- [ Uygulama Ekranları ve Görsel Analizler](#️-uygulama-ekranları-ve-görsel-analizler)
 - [ Öne Çıkan Özellikler & Yetenekler](#-öne-çıkan-özellikler--yetenekler)
 - [ UI/UX Tasarım Sistemi (Figma)](#-uiux-tasarım-sistemi-figma)
 - [ Sistem Mimarisi & Veri Akış Şeması](#️-sistem-mimarisi--veri-akış-şeması)
 - [ Klasör Yapısı (Directory Tree)](#-klasör-yapısı-directory-tree)
 - [ Teknoloji Yığını (Tech Stack)](#️-teknoloji-yığını-tech-stack)
-- [ Veritabanı Mimarisi & SQL Kısıtlamaları](#️-veritabanı-mimarisi--sql-kısıtlamaları)
+- [ Veritabanı Mimarisi & Veri Sözlüğü](#️-veritabanı-mimarisi--veri-sözlüğü)
 - [ Hata Yönetimi & Troubleshooting](#-hata-yönetimi--troubleshooting)
 - [ İletişim](#-iletişim)
 
@@ -49,15 +49,48 @@ Bu proje; **UI/UX Figma Design System** aşamasından başlayıp, **Tasarım Mim
 
 
 
-##  Proje Arayüz & Ekran Simülasyonları
+##  Uygulama Ekranları ve Görsel Analizler
 
 <blockquote>
   <b> Arayüz Notu:</b> Tüm ekranlar iOS Human Interface Guidelines standartlarında 4 column simetrik grid ve Notch/Safe Area uyumu ile tasarlanmıştır.
 </blockquote>
 
-| 1. Discover Dashboard | 2. Detail & Calorie Card | 3. Cart & Receptive UI | 4. Figma Design Tokens |
-| :---: | :---: | :---: | :---: |
-| <img src="https://via.placeholder.com/280x560/10B981/FFFFFF?text=Discover+Screen" width="220"/> | <img src="https://via.placeholder.com/280x560/FF6B35/FFFFFF?text=Product+Detail" width="220"/> | <img src="https://via.placeholder.com/280x560/2C2C2C/FFFFFF?text=Cart+Dashboard" width="220"/> | <img src="https://via.placeholder.com/280x560/F24E1E/FFFFFF?text=Figma+Tokens" width="220"/> |
+
+
+### 1. Keşfet (Discover) ve Ana Sayfa Akışı
+Uygulama açılışında kullanıcıyı karşılayan ana sayfa, kategori filtreleri ve ürün ızgara (grid) yapısı[cite: 6, 7].
+
+![Discover Ekranı](screenshots/Ekran%20görüntüsü%202026-06-13%20171659.jpg)
+
+---
+
+### 2. Çoklu Ekran Akışı (Splash, Login, Home, Detail)
+Projenin uçtan uca tüm ekran akışlarının (Açılış, Giriş, Keşif ve Detay) bütüncül görünümü[cite: 7].
+
+![Multi Screen Flow](screenshots/Ekran%20görüntüsü%202026-06-13%20220533.jpg)
+
+---
+
+### 3. Figma Design System & Tokens
+Tasarım sisteminde kullanılan renk paletleri, tipografi hiyerarşisi, ikonlar ve component varyantlarının toplu halde gösterildiği tahta[cite: 8].
+
+![Design System](screenshots/Ekran%20görüntüsü%202026-06-13%20220601.jpg)
+
+---
+
+### 4. Web Yönetim Paneli Simülasyonu (Arayüz)
+Yönetim paneli üzerinden yeni sağlıklı tariflerin eklendiği ve listelendiği web arayüzü görünümü[cite: 9].
+
+![Web Dashboard](screenshots/Ekran%20görüntüsü%202026-06-21%20032814.png)
+
+---
+
+
+
+### 5. VS Code & Canlı Geliştirme Ortamı
+Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortamının (Vite/React/Web) incelendiği IDE ekranı[cite: 10].
+
+![IDE Environment](screenshots/Ekran%20görüntüsü%202026-06-21%20033417.png)
 
 ---
 
@@ -83,6 +116,8 @@ Bu proje; **UI/UX Figma Design System** aşamasından başlayıp, **Tasarım Mim
 <blockquote>
   <b> Atomic Design Rules:</b> Tüm bileşenler Figma üzerinde Auto Layout (Shift + A) ve 8-pt Grid standartlarına tam bağlı kalınarak üretilmiştir.
 </blockquote>
+
+
 
 ### Design Tokens & Color Palette
 
@@ -142,11 +177,12 @@ nutriguide-design-architecture/
 │   └── schema.sql                 # Customers ve Orders veritabanı kodları
 ├── docs/                          # UI/UX Tasarım Raporu ve Dokümantasyonlar
 │   └── nutriguide_report.docx     # 2-3 sayfalık resmi proje raporu
-├── screenshots/                   # Figma Ekran Görüntüleri ve Tasarım Çıktıları
-│   ├── discover_screen.png        # Keşfet ekranı çıktısı
-│   ├── detail_screen.png          # Ürün detay sayfası çıktısı
-│   ├── cart_screen.png            # Sepet ekranı çıktısı
-│   └── tokens_figma.png           # Figma Design Tokens görseli
+├── screenshots/                   # Gerçek Ekran Görüntüleri ve Tasarım Çıktıları
+│   ├── Ekran görüntüsü 2026-06-13 171659.jpg
+│   ├── Ekran görüntüsü 2026-06-13 220533.jpg
+│   ├── Ekran görüntüsü 2026-06-13 220601.jpg
+│   ├── Ekran görüntüsü 2026-06-21 032814.png
+│   └── Ekran görüntüsü 2026-06-21 033417.png
 ├── .gitignore                     # Git Tarafından İzlenmeyecek Dosyalar
 ├── CODE_OF_CONDUCT.md             # Topluluk Davranış Kuralları
 ├── CONTRIBUTING.md                # Katkıda Bulunma Rehberi
@@ -154,40 +190,28 @@ nutriguide-design-architecture/
 
 
 
-##  Teknoloji Yığını (Tech Stack)
-
-| Katman | Teknoloji | Sürüm |
-| :--- | :--- | :--- |
-| **UI/UX Design** | Figma (Auto Layout & Design Tokens) | Native |
-| **Design Guidelines** | Apple iOS Human Interface Guidelines | Latest |
-| **Database Engine** | Relational SQL (MS SQL / PostgreSQL) | Engine v15+ |
-| **Build & Tooling** | Figma Prototype & Vector Engine | Latest |
-
----
+ Teknoloji Yığını (Tech Stack)KatmanTeknolojiSürümUI/UX DesignFigma (Auto Layout & Design Tokens)NativeDesign GuidelinesApple iOS Human Interface GuidelinesLatestDatabase EngineRelational SQL (MS SQL / PostgreSQL)Engine v15+Build & ToolingFigma Prototype & Vector EngineLatest
 
 
-
-##  Veritabanı Mimarisi & SQL Kısıtlamaları
-
-```sql
--- Müşteri Tablosu (Unique Key Kısıtlamalı)
+ Veritabanı Mimarisi & Veri Sözlüğü
+Projenin arka planında çalışan ilişkisel veritabanı tabloları, veri türleri ve kısıtlama detayları aşağıda sunulmuştur.1. Customers TablosuUygulamaya kayıt olan kullanıcıların temel bilgilerinin ve benzersiz erişim verilerinin saklandığı tablodur.KolonVeri TipiAçıklamaCustomerIDINT (PK)Benzersiz Müşteri ID (Auto Increment)UsernameVARCHAR(50)Kullanıcı adı bilgisiEmailVARCHAR(100)Benzersiz e-posta adresi (UNIQUE KEY)CreatedAtDATETIMEKayıt oluşturulma tarihiSQL-- Müşteri Tablosu (Unique Key Kısıtlamalı)
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY IDENTITY(1,1),
     Username VARCHAR(50) NOT NULL,
     Email VARCHAR(100) NOT NULL CONSTRAINT UQ_Customer_Email UNIQUE,
     CreatedAt DATETIME DEFAULT GETDATE()
 );
-
-
-
--- Sipariş Detay Tablosu (Foreign Key Bağlantılı)
+2. Orders TablosuKullanıcıların vermiş olduğu siparişlerin ve toplam tutarlarının saklandığı tablodur.KolonVeri TipiAçıklamaOrderIDINT (PK)Benzersiz Sipariş ID (Auto Increment)CustomerIDINT (FK)Siparişi veren müşterinin ID'si (Customers ile ilişkili)TotalPriceDECIMAL(10,2)Sipariş toplam tutarıOrderDateDATETIMESiparişin verildiği tarih/saatSQL-- Sipariş Detay Tablosu (Foreign Key Bağlantılı)
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY IDENTITY(1,1),
     CustomerID INT FOREIGN KEY REFERENCES Customers(CustomerID),
     TotalPrice DECIMAL(10,2) NOT NULL,
     OrderDate DATETIME DEFAULT GETDATE()
 );
- Hata Yönetimi & Troubleshooting1. UNIQUE KEY Constraint Violation (SQL Hataları)Problem: Test ortamında mükerrer e-posta veya kullanıcı adı kaydı girildiğinde veritabanı hata verir.Çözüm: Test verileri sıfırlanırken aşağıdaki komut çalıştırılmalıdır:SQLTRUNCATE TABLE Customers;
+
+
+
+ Hata Yönetimi & Troubleshooting1. UNIQUE KEY Constraint Violation (SQL Hataları)Problem: Test ortamında mükerrer e-posta veya kullanıcı adı kaydı girildiğinde veritabanı UQ_Customer_Email hatası verir.Çözüm: Test verileri sıfırlanırken aşağıdaki komut çalıştırılmalıdır:SQLTRUNCATE TABLE Customers;
 
 
 
