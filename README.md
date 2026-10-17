@@ -22,6 +22,8 @@ Markdown<div align="center">
 
 ---
 
+
+
 ## 📌 Proje Amacı & Genel Bakış
 
 **NutriGuide**, kişiselleştirilmiş kalori/makro besin takibi ile sağlıklı yemek kâseleri (bowl) sipariş süreçlerini tek bir çatı altında toplayan premium bir mobil ve web uygulama simülasyonudur.
@@ -29,6 +31,8 @@ Markdown<div align="center">
 Bu proje; **UI/UX Figma Design System** aşamasından başlayıp, **Tasarım Mimarisi**, **İlişkisel SQL Veritabanı Bütünlüğü** katmanlarını kapsayan kurumsal standartlarda geliştirilmiş bir tasarım ve mimari çalışmasıdır.
 
 ---
+
+
 
 ## 🗺️ İçindekiler
 - [🖼️ Uygulama Ekranları ve Görsel Analizler](#️-uygulama-ekranları-ve-görsel-analizler)
@@ -43,11 +47,15 @@ Bu proje; **UI/UX Figma Design System** aşamasından başlayıp, **Tasarım Mim
 
 ---
 
+
+
 ## 🖼️ Uygulama Ekranları ve Görsel Analizler
 
 <blockquote>
   <b>💡 Arayüz Notu:</b> Tüm ekranlar iOS Human Interface Guidelines standartlarında 4 column simetrik grid ve Notch/Safe Area uyumu ile tasarlanmıştır.
 </blockquote>
+
+
 
 ### 1. Keşfet (Discover) ve Ana Sayfa Akışı
 Uygulama açılışında kullanıcıyı karşılayan ana sayfa, kategori filtreleri ve ürün ızgara (grid) yapısı.
@@ -56,12 +64,16 @@ Uygulama açılışında kullanıcıyı karşılayan ana sayfa, kategori filtrel
 
 ---
 
+
+
 ### 2. Çoklu Ekran Akışı (Splash, Login, Home, Detail)
 Projenin uçtan uca tüm ekran akışlarının (Açılış, Giriş, Keşif ve Detay) bütüncül görünümü.
 
 <img src="screenshots/Ekran%20görüntüsü%202026-06-13%20220533.jpg" alt="Multi Screen Flow" width="100%"/>
 
 ---
+
+
 
 ### 3. Figma Design System & Tokens
 Tasarım sisteminde kullanılan renk paletleri, tipografi hiyerarşisi, ikonlar ve component varyantlarının toplu halde gösterildiği tahta.
@@ -77,12 +89,16 @@ Yönetim paneli üzerinden yeni sağlıklı tariflerin eklendiği ve listelendi�
 
 ---
 
+
+
 ### 5. VS Code & Canlı Geliştirme Ortamı
 Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortamının (Vite/React/Web) incelendiği IDE ekranı.
 
 <img src="screenshots/Ekran%20görüntüsü%202026-06-21%20033417.png" alt="IDE Environment" width="100%"/>
 
 ---
+
+
 
 ## 🚀 Öne Çıkan Özellikler & Yetenekler
 
@@ -96,6 +112,8 @@ Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortam�
 | **Veri Bütünlüğü (Data Integrity)**| SQL veritabanı seviyesinde `UNIQUE KEY` kısıtlaması | ✅ |
 
 ---
+
+
 
 ## 🎨 UI/UX Tasarım Sistemi (Figma)
 
@@ -167,19 +185,79 @@ nutriguide-design-architecture/
 ├── CODE_OF_CONDUCT.md             # Topluluk Davranış Kuralları
 ├── CONTRIBUTING.md                # Katkıda Bulunma Rehberi
 └── README.md                      # Kurumsal Ana Dokümantasyon
-🛠️ Teknoloji Yığını (Tech Stack)KatmanTeknolojiSürümUI/UX DesignFigma (Auto Layout & Design Tokens)NativeDesign GuidelinesApple iOS Human Interface GuidelinesLatestDatabase EngineRelational SQL (MS SQL / PostgreSQL)Engine v15+Build & ToolingFigma Prototype & Vector EngineLatest🗄️ Veritabanı Mimarisi & Veri SözlüğüProjenin arka planında çalışan ilişkisel veritabanı tabloları, veri türleri ve kısıtlama detayları aşağıda sunulmuştur.1. Customers TablosuUygulamaya kayıt olan kullanıcıların temel bilgilerinin ve benzersiz erişim verilerinin saklandığı tablodur.KolonVeri TipiAçıklamaCustomerIDINT (PK)Benzersiz Müşteri ID (Auto Increment)UsernameVARCHAR(50)Kullanıcı adı bilgisiEmailVARCHAR(100)Benzersiz e-posta adresi (UNIQUE KEY)CreatedAtDATETIMEKayıt oluşturulma tarihiSQL-- Müşteri Tablosu (Unique Key Kısıtlamalı)
+
+
+
+---
+### 🛠️ Teknoloji Yığını (Tech Stack)
+
+| Katman | Teknoloji | Sürüm |
+| :--- | :--- | :--- |
+| **UI/UX Design** | Figma (Auto Layout & Design Tokens) | Native |
+| **Design Guidelines** | Apple iOS Human Interface Guidelines | Latest |
+| **Database Engine** | Relational SQL (MS SQL / PostgreSQL) | Engine v15+ |
+| **Build & Tooling** | Figma Prototype & Vector Engine | Latest |
+
+
+
+---
+## 🗄️ Veritabanı Mimarisi & Veri Sözlüğü
+Projenin arka planında çalışan ilişkisel veritabanı tabloları, veri türleri ve kısıtlama detayları aşağıda sunulmuştur.
+
+### 1. Customers Tablosu
+Uygulamaya kayıt olan kullanıcıların temel bilgilerinin ve benzersiz erişim verilerinin saklandığı tablodur.
+
+| Kolon | Veri Tipi | Açıklama |
+| :--- | :--- | :--- |
+| **CustomerID** | INT (PK) | Benzersiz Müşteri ID (Auto Increment) |
+| **Username** | VARCHAR(50) | Kullanıcı adı bilgisi |
+| **Email** | VARCHAR(100) | Benzersiz e-posta adresi (UNIQUE KEY) |
+| **CreatedAt** | DATETIME | Kayıt oluşturulma tarihi |
+
+#### SQL Kodu
+```sql
+-- Müşteri Tablosu (Unique Key Kısıtlamalı)
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY IDENTITY(1,1),
     Username VARCHAR(50) NOT NULL,
     Email VARCHAR(100) NOT NULL CONSTRAINT UQ_Customer_Email UNIQUE,
     CreatedAt DATETIME DEFAULT GETDATE()
 );
-2. Orders TablosuKullanıcıların vermiş olduğu siparişlerin ve toplam tutarlarının saklandığı tablodur.KolonVeri TipiAçıklamaOrderIDINT (PK)Benzersiz Sipariş ID (Auto Increment)CustomerIDINT (FK)Siparişi veren müşterinin ID'si (Customers ile ilişkili)TotalPriceDECIMAL(10,2)Sipariş toplam tutarıOrderDateDATETIMESiparişin verildiği tarih/saatSQL-- Sipariş Detay Tablosu (Foreign Key Bağlantılı)
+```
+
+
+
+---
+
+### 2. Orders Tablosu
+Kullanıcıların vermiş olduğu siparişlerin ve toplam tutarlarının saklandığı tablodur.
+
+| Kolon | Veri Tipi | Açıklama |
+| :--- | :--- | :--- |
+| **OrderID** | INT (PK) | Benzersiz Sipariş ID (Auto Increment) |
+| **CustomerID** | INT (FK) | Siparişi veren müşterinin ID'si (Customers ile ilişkili) |
+| **TotalPrice** | DECIMAL(10,2) | Sipariş toplam tutarı |
+| **OrderDate** | DATETIME | Siparişin verildiği tarih/saat |
+
+#### SQL Kodu
+```sql
+-- Sipariş Detay Tablosu (Foreign Key Bağlantılı)
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY IDENTITY(1,1),
     CustomerID INT FOREIGN KEY REFERENCES Customers(CustomerID),
     TotalPrice DECIMAL(10,2) NOT NULL,
     OrderDate DATETIME DEFAULT GETDATE()
 );
+```
+
+
+
 🚨 Hata Yönetimi & Troubleshooting1. UNIQUE KEY Constraint Violation (SQL Hataları)Problem: Test ortamında mükerrer e-posta veya kullanıcı adı kaydı girildiğinde veritabanı UQ_Customer_Email hatası verir.Çözüm: Test verileri sıfırlanırken aşağıdaki komut çalıştırılmalıdır:SQLTRUNCATE TABLE Customers;
-👤 İletişim & GeliştiriciSelinay Kardelen BölgeBilgisayar Mühendisliği Öğrencisi🔗 LinkedIn: Selinay Kardelen Bölge📧 E-mail: kardelenbolge@gmail.com
+
+
+
+👤 İletişim & Geliştirici
+Selinay Kardelen Bölge
+Bilgisayar Mühendisliği
+LinkedIn: Selinay Kardelen Bölge
+E-mail: kardelenbolge@gmail.com
