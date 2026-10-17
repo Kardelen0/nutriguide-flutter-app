@@ -36,7 +36,7 @@ Bu proje; **UI/UX Figma Design System** aşamasından başlayıp, **Tasarım Mim
 
 Uygulama açılışında kullanıcıyı karşılayan ana sayfa, kategori filtreleri ve ürün ızgara (grid) yapısı.
 
-<img src="screenshots/Ekran%20görüntüsü%202026-06-13%20171659.jpg" alt="Discover Ekranı" width="100%"/>
+<img src="screenshots/Ekran görüntüsü 2026-06-13 171659.png" alt="Discover Ekranı" width="100%"/>
 
 ---
 
@@ -44,7 +44,7 @@ Uygulama açılışında kullanıcıyı karşılayan ana sayfa, kategori filtrel
 
 Projenin uçtan uca tüm ekran akışlarının (Açılış, Giriş, Keşif ve Detay) bütüncül görünümü.
 
-<img src="screenshots/Ekran%20görüntüsü%202026-06-13%20220533.jpg" alt="Multi Screen Flow" width="100%"/>
+<img src="screenshots/Ekran görüntüsü 2026-06-13 220533.png" alt="Multi Screen Flow" width="100%"/>
 
 ---
 
@@ -52,7 +52,7 @@ Projenin uçtan uca tüm ekran akışlarının (Açılış, Giriş, Keşif ve De
 
 Tasarım sisteminde kullanılan renk paletleri, tipografi hiyerarşisi, ikonlar ve component varyantlarının toplu halde gösterildiği tahta.
 
-<img src="screenshots/Ekran%20görüntüsü%202026-06-13%20220601.jpg" alt="Design System" width="100%"/>
+<img src="screenshots/Ekran görüntüsü 2026-06-13 220601.png" alt="Design System" width="100%"/>
 
 ---
 
