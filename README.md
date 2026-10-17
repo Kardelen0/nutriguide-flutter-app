@@ -133,7 +133,7 @@ Projenin kaynak kodlarının, bileşen yapısının ve canlı geliştirme ortam�
 ---
 
 
-## 📂 Klasör Yapısı (Directory Tree)
+##  Klasör Yapısı (Directory Tree)
 
 ```bash
 nutriguide-design-architecture/
